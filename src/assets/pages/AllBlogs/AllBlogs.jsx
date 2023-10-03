@@ -2,8 +2,11 @@ import React, { useEffect, useState } from 'react'
 import Navbar from '../../../components/Navbar'
 import './AllBlogs.css'
 import axios from 'axios'
+import { useNavigate } from 'react-router-dom'
 
 const AllBlogs = () => {
+
+  const navigate = useNavigate()
 
   const [blogs, setBlogs] = useState([])
 
@@ -35,6 +38,7 @@ const AllBlogs = () => {
             <p className="card-description">{blog.description}</p><br />
             <p>{blog.createdAt}</p>
         </div>
+        <p onClick={()=> navigate("/singleBlog")} style={{textAlign:'center'}}>See More</p>
       </div>
           )
         })
