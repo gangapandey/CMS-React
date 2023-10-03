@@ -20,6 +20,8 @@ const CreateBlog = () => {
       avatar: image
     }
     const response = await axios.post("https://651baa58194f77f2a5aeace7.mockapi.io/blogs", data)
+
+    //to move the page to home after click on submit
     if(response.status == 201){
       navigate("/")
     }
