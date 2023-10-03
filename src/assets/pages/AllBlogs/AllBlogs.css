@@ -1,0 +1,40 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Style the card container */
+.card {
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Style the card image */
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+/* Style the card content */
+.card-content {
+    padding: 20px;
+}
+
+/* Style the card title */
+.card-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Style the card description */
+.card-description {
+    font-size: 16px;
+    line-height: 1.5;
+}
