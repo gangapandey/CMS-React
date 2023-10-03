@@ -25,6 +25,7 @@ const AllBlogs = () => {
 
     <div style={{display: 'flex', justifyContent:'space-evenly', flexWrap: 'wrap'}}>
       {
+        //map for creating loop
         blogs.map((blog)=>{
           return (
             <div className="card">
