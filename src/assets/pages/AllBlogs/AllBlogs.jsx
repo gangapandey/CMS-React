@@ -38,7 +38,7 @@ const AllBlogs = () => {
             <p className="card-description">{blog.description}</p><br />
             <p>{blog.createdAt}</p>
         </div>
-        <p onClick={()=> navigate("/singleBlog")} style={{textAlign:'center'}}>See More</p>
+        <p onClick={()=> navigate("/singleBlog/" + blog.id)} style={{textAlign:'center'}}>See More</p>
       </div>
           )
         })
