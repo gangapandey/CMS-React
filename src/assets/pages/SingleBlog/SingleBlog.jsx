@@ -25,7 +25,7 @@ const SingleBlog = () => {
     }
   }
 
-  //delete blog
+  //delete the existing blog
   const deleteBlog = async()=>{
     const response = await axios.delete("https://651baa58194f77f2a5aeace7.mockapi.io/blogs/" + id)
     console.log(response)
