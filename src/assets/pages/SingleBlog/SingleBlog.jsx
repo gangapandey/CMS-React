@@ -12,7 +12,7 @@ const SingleBlog = () => {
   const [blogs, setBlogs] = useState();
 
   const fetchBlogs = async () => {
-    const response = await axios.get("https://651baa58194f77f2a5aeace7.mockapi.io/blogs/" + id)
+    const response = await axios.get("https://651baa58194f77f2a5aeace7.mockapi.io/blogs/" + id)   // + id ko satta ("link/`{id}" garna ni milxa
     console.log(response)
     if (response.status == 200) {
       setBlogs(response.data)
