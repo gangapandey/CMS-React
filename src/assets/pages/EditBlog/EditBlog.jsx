@@ -3,6 +3,8 @@ import Navbar from '../../../components/Navbar'
 import axios from 'axios'
 import { useNavigate, useParams } from 'react-router-dom'
 
+//for edit or update of a blog
+
 const EditBlog = () => {
 
   const navigate = useNavigate()
