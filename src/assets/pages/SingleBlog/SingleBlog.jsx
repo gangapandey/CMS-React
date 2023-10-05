@@ -55,6 +55,7 @@ const SingleBlog = () => {
             <p>{blogs?.description}</p>
             <br />
             <button onClick={deleteBlog} style={{backgroundColor:'#157fea', color: '#fff'}}>Delete Blog</button>
+            <button onClick={() => navigate("/editBlog/" + blogs.id)} style={{backgroundColor:'#157fea', color: '#fff', margin:'20px'}}>Edit Blog</button>
         </div>
     </section>
 
