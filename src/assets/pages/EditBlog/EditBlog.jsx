@@ -4,6 +4,8 @@ import axios from 'axios'
 import { useNavigate, useParams } from 'react-router-dom'
 import Footer from '../../../components/Footer'
 
+//for edit or update of a blog
+
 const EditBlog = () => {
 
   const navigate = useNavigate()
