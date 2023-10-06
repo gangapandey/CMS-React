@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import Navbar from '../../../components/Navbar'
 import axios from 'axios'
 import { useNavigate, useParams } from 'react-router-dom'
+import Footer from '../../../components/Footer'
 
 const EditBlog = () => {
 
@@ -59,6 +60,8 @@ const EditBlog = () => {
             <button type="submit" value="Edit">Edit</button>
         </form>
         </div>
+
+        <Footer />
     </div>
   )
 }

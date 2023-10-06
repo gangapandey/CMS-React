@@ -3,6 +3,9 @@ import Navbar from '../../../components/Navbar'
 import './AllBlogs.css'
 import axios from 'axios'
 import { useNavigate } from 'react-router-dom'
+import Footer from '../../../components/Footer'
+
+
 
 const AllBlogs = () => {
 
@@ -43,9 +46,13 @@ const AllBlogs = () => {
           )
         })
       }
+     
 
     
-    </div>
+    </div> 
+
+    <Footer />
+    
       
     </div>
   )

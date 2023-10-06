@@ -3,6 +3,7 @@ import Navbar from '../../../components/Navbar'
 import axios from 'axios';
 import { useNavigate, useParams } from 'react-router-dom';
 import './SingleBlog.css'
+import Footer from '../../../components/Footer';
 
 const SingleBlog = () => {
 
@@ -58,6 +59,8 @@ const SingleBlog = () => {
             <button onClick={() => navigate("/editBlog/" + blogs.id)} style={{backgroundColor:'#157fea', color: '#fff', margin:'20px'}}>Edit Blog</button>
         </div>
     </section>
+
+    <Footer />
 
     </div>
   )

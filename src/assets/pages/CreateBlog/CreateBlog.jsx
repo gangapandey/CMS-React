@@ -3,6 +3,7 @@ import Navbar from '../../../components/Navbar'
 import "./CreateBlog.css"
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
+import Footer from '../../../components/Footer';
 
 const CreateBlog = () => {
 
@@ -45,6 +46,9 @@ const CreateBlog = () => {
 
             <button type="submit">Submit</button>
         </form>
+    </div>
+    <div>
+      <Footer />
     </div>
     </div>
   )
